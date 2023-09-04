@@ -19,7 +19,7 @@ public:
     }
     virtual void publication() 
     {
-        std::cout << get_side() << std::endl;
+        std::cout << " \n\n\n\t Sides number: \n" << get_side() << std::endl;
     };
     
 };
@@ -35,9 +35,10 @@ public:
     
     void publication() override
     {
+        Figure::publication();
         std::cout << "\nTriangle:" << std::endl;
-        std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << std::endl;
-        std::cout <<" Angle A "  << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << std::endl;
+        std::cout << "Sides: " << " Side A: " << a1 << " Side B " << b1 << "Side C " << c1 << std::endl;
+        std::cout <<" Angles: " << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << std::endl;
     }
 
 
@@ -52,9 +53,10 @@ public:
 
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Quad:" << std::endl;
         std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << "Side D" << d1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 <<" Side D" << _d1 << std::endl;
+        std::cout << "Angles: " << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << " Side D" << _d1 << std::endl;
     }
 
 };
@@ -68,9 +70,10 @@ public:
     right_angle_triangle() : Triangle(), a(10), b(10), c(10), _a(90), _b(45), _c(45) {};
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Right angle triangle:" << std::endl;
         std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1  << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1  << std::endl;
+        std::cout << "Angles: " << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1  << std::endl;
     }
 
 
@@ -86,9 +89,10 @@ public:
     isosceles_triangle() : Triangle(), a(10), b(30), c(10), _a(80), _b(50), _c(50) {};
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Right angle triangle:" << std::endl;
         std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << std::endl;
+        std::cout << "Angles: " << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << std::endl;
     }
 
 
@@ -104,9 +108,10 @@ public:
     equilateral_triangle() : Triangle(), a(30), b(30), c(30), _a(60), _b(60), _c(60) {};
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Right angle triangle:" << std::endl;
         std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << std::endl;
+        std::cout << "Angles: " << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << std::endl;
     }
 
 
@@ -121,9 +126,10 @@ public:
 
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Rectangle:" << std::endl;
-        std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << "Side D" << d1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << " Side D" << _d1 << std::endl;
+        std::cout << "Sides: " << " Side A: " << a1 << " Side B:" << b1 << "Side C: " << c1 << "Side D:" << d1 << std::endl;
+        std::cout << "Angles: "<< " Angle A: " << _a1 << " Angle B: " << _b1 << " Angle C: " << _c1 << " Side D:" << _d1 << std::endl;
     }
 
 };
@@ -137,9 +143,10 @@ public:
 
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Square:" << std::endl;
-        std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << "Side D" << d1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << " Side D" << _d1 << std::endl;
+        std::cout << "Sides: " << " Side A: " << a1 << " Side B: " << b1 << "Side C:  " << c1 << "Side D: " << d1 << std::endl;
+        std::cout << " Angle A: " << _a1 << " Angle B: " << _b1 << " Angle C: " << _c1 << " Side D: " << _d1 << std::endl;
     }
 
 };
@@ -154,9 +161,10 @@ public:
 
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Parallelogram:" << std::endl;
-        std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << "Side D" << d1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << " Side D" << _d1 << std::endl;
+        std::cout << "Sides: " << " Side A: " << a1 << " Side B: " << b1 << "Side C: " << c1 << "Side D: " << d1 << std::endl;
+        std::cout << "Angles: " <<  " Angle A: " << _a1 << " Angle B: " << _b1 << " Angle C: " << _c1 << " Side D: " << _d1 << std::endl;
     }
 
 };
@@ -171,9 +179,10 @@ public:
 
     void publication() override
     {
+        Figure::publication();
         std::cout << "\n Rhombus:" << std::endl;
-        std::cout << "Sides: " << " Side A: " << a1 << " Side B" << b1 << "Side C " << c1 << "Side D" << d1 << std::endl;
-        std::cout << " Angle A " << _a1 << " Angle B " << _b1 << " Angle C " << _c1 << " Side D" << _d1 << std::endl;
+        std::cout << "Sides: " << " Side A: " << a1 << " Side B:" << b1 << "Side C: " << c1 << "Side D: " << d1 << std::endl;
+        std::cout << " Angle A: " << _a1 << " Angle B: " << _b1 << " Angle C: " << _c1 << " Side D: " << _d1 << std::endl;
     }
 
 };
